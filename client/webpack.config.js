@@ -26,7 +26,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      configUrl: process.env.CONFIG_URL || 'https://sig.stagesimplewebrtc.com/config/guest/talky',
+      configUrl: `https://api.simplewebrtc.com/config/user/${process.env.SWRTC_API_KEY}`,
       inject: 'head'
     }),
     new CopyPlugin([{ from: 'public', ignore: ['index.html'] }]),

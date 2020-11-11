@@ -51,7 +51,6 @@ const validateRecordingData = function (recordingToken, account_id) {
 app.post("/verify-recording", async (req, res) => {
 
   const recordingData = validateRecordingData(req.body.recording_token, req.body.org_key)
-  console.log('RESPONSE:', recordingData);
   return res.send(recordingData);
 });
 
