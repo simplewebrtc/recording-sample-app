@@ -1,7 +1,7 @@
 # SimpleWebRTC Recording Sample Client
 
 This example client is meant to demonstrate how to create a recording client for
-use with a SimpleWebRTC App. This app is based on the [https://github.com/simplewebrtc/simplewebrtc-talky-sample-app](SimpleWebRTC Sample App)
+use with a SimpleWebRTC App. This app is based on the [SimpleWebRTC Sample App](https://github.com/simplewebrtc/simplewebrtc-talky-sample-app)
 but includes a tiny backend which is responsible for verifying access to the recording client.
 The verification step is important to prevent public access to your rooms.
 
@@ -23,7 +23,7 @@ as a *query param*. In this example app you can
 set the API Secret as an environment parameter
 to the process as shown above `SWRTC_API_SECRET=<YOUR_SECRET_KEY> npm start`.
 
-Snippet from [./public/index.html](index.html)
+Snippet from [public/index.html](https://github.com/simplewebrtc/recording-sample-app/blob/master/client/public/index.html)
 
 ```js
       // get query params
